@@ -1,0 +1,26 @@
+    1  ls
+    2  ssh -XYA thomas@146.118.64.101
+    3  ls
+    4  cd Documents
+    5  ls
+    6  cd Uni
+    7  ls
+    8  cd Chem\ Research
+    9  ls
+   10  mkdir Files
+   11  cd Files
+   12  git clone git@github.com:scicrow/atomisticsim-biominerals.git
+   13  ls
+   14  cd atomisticsim-biominerals
+   15  ls
+   16  ssh -XYA thomas@146.118.64.101 
+   17  ls
+   18  ssh -XYA thomas@146.118.64.101 
+   19  ls
+   20  cd Downloads
+   21  ls
+   22  nano output.0.out
+   23  ls
+   24  cd PycharmProjects
+   25  LS
+   26  cd openMMchart
