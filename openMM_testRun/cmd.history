@@ -1,0 +1,2 @@
+gpta.x --i OAc_neutral.pdb trajectory.5.dcd --top +def Mg Ca C,O1,O2,O3 O,H1,H2 --frames 20: --unwrap --extract +system +s Ca,C,Mg,O1,O2,O3 +out avg.pdb
+gpta.x --i avg.pdb --top +def Mg Ca C,O1,O2,O3 O,H1,H2 --pbc --o coord.pdb
