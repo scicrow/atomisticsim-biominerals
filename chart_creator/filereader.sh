@@ -4,7 +4,7 @@
 file_list=()
 
 # Loop through files in the current directory and add those starting with "out" to the array
-for file in atomisticsim-biominerals/openMM_testRun/output*; do
+for file in ./output*; do
     if [ -f "$file" ]; then
         file_list+=("$file")
     fi
