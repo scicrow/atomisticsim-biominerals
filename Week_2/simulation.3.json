@@ -53,7 +53,7 @@
         "ensemble": "NVT",
         "integrator": "LANG",
         "timestep": 0.0001,
-        "numberOfSteps": "10000ls",
+        "numberOfSteps": 1000,
         "simulationTime": -1,
         "temperature": 300,
         "thermostatParameter": 1.0,
