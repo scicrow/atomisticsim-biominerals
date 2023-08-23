@@ -1,0 +1,119 @@
+{
+    "openMM": {
+        "text": "#--- openMM parameters ----------------#",
+        "Platform": "CPU",
+        "Precision": "mixed",
+        "DeviceIndex": "0"
+    },
+    "sim": {
+        "text": "#--- Simulation details ---------------#",
+        "runID": ".0",
+        "debug": false,
+        "energy": false,
+        "minimise": false,
+        "md": true,
+        "fep": false,
+        "ti": false,
+        "ffs": false,
+        "mtd": false,
+        "plumed": false,
+        "osmotic": false,
+        "restraint": false,
+        "openMM": true,
+        "forcefield": true
+    },
+    "debug": {
+        "text": "#--- Debugging parameters -------------#",
+        "nFreq": 1,
+        "nFrames": 20,
+        "energyThreshold": 0
+    },
+    "forcefield": {
+        "text": "#--- Forcefield parameters  -----------#",
+        "forcefield": "caco3.xml",
+        "amoeba": false,
+        "opls": false,
+        "coordinates": "OAc_neutral.pdb",
+        "nonbondedMethod": "PME",
+        "ewaldErrorTolerance": 1e-05,
+        "nonbondedCutoff": 0.9,
+        "polarization": null,
+        "mutualInducedTargetEpsilon": null,
+        "useDispersionCorrection": false,
+        "constraints": null,
+        "rigidWater": false
+    },
+    "minimise": {
+        "text": "#--- Energy minimisation parameters ---#",
+        "tolerance": 10,
+        "maxIterations": 0,
+        "output": "geopt.pdb"
+    },
+    "md": {
+        "text": "#--- Molecular dynamics parameters ----#",
+        "ensemble": "NVT",
+        "integrator": "LANG",
+        "timestep": 0.001,
+        "numberOfSteps": 10000,
+        "simulationTime": -1,
+        "temperature": 300,
+        "thermostatParameter": 1.0,
+        "pressure": 1,
+        "barostat": "ISO",
+        "barostatUpdate": 25,
+        "output": "output.0.out",
+        "trajectory": "trajectory.0.dcd",
+        "reportInterval": 1000,
+        "checkpointInterval": 1000000,
+        "restartFrom": null,
+        "restartFile": "restart.0.xml"
+    },
+    "plumed": {
+        "text": "#--- PLUMED parameters ----------------#",
+        "input": "plumed.inp",
+        "reportInterval": 100
+    },
+    "mtd": {
+        "text": "#--- Metadynamics (built in) ----------#",
+        "input": null,
+        "dump": null
+    },
+    "fep": {
+        "text": "#--- Free Energy Perturbation ---------#",
+        "type": null,
+        "multi": false,
+        "lambda": [],
+        "fepFile": [],
+        "atoms": [],
+        "types": [],
+        "indices": [],
+        "residue": [],
+        "output": "fep.0.out",
+        "equilibrationTime": 100.0,
+        "reportInterval": 1000
+    },
+    "ti": {
+        "text": "#--- Thermodynamic Integration --------#",
+        "output": "ti.0.out",
+        "force": "tiForce",
+        "equilibrationSteps": 10000.0,
+        "reportInterval": 1000
+    },
+    "ffs": {
+        "text": "#--- Forward Flux Sampling ------------#",
+        "output": "ffs.0.out",
+        "debug": true,
+        "par": null
+    },
+    "osmotic": {
+        "text": "#--- Osmotic pressure calculation -----#",
+        "force": null,
+        "geometry": "PLANE",
+        "reportInterval": 100,
+        "gcmd": null,
+        "output": "osmotic.0.out"
+    },
+    "restraint": {
+        "text": "#--- Restraint commands ---------------#"
+    }
+}
